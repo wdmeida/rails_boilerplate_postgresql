@@ -1,0 +1,52 @@
+AllCops:
+  Exclude:
+    - 'bin/*'
+    - 'config/**/*'
+    - 'db/**/*'
+    - 'public/**/*'
+    - 'spec/**/*'
+    - 'vendor/**/*'
+
+Metrics/AbcSize:
+  Max: 35
+Metrics/LineLength:
+  Max: 130
+Metrics/MethodLength:
+  Max: 60
+Metrics/ClassLength:
+  Max: 300
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
+Style/Documentation:
+  Enabled: false
+Style/TrailingCommaInArrayLiteral:
+  EnforcedStyleForMultiline: consistent_comma
+Style/TrailingCommaInHashLiteral:
+  EnforcedStyleForMultiline: consistent_comma
+
+Layout/EmptyLinesAroundClassBody:
+  Enabled: false
+Layout/EmptyLinesAroundModuleBody:
+  Enabled: false
+Style/UnneededInterpolation:
+  Enabled: false
+Style/BracesAroundHashParameters:
+  Enabled: false
+Style/SymbolArray:
+  Enabled: true
+  EnforcedStyle: brackets
+
+Style/ConditionalAssignment:
+  Enabled: false
+Style/NumericPredicate:
+  Enabled: false
+Style/CaseEquality:
+  Enabled: false
+Style/RedundantSelf:
+  Enabled: false
+Naming/AccessorMethodName:
+  Enabled: false
+
+Bundler/OrderedGems:
+  Enabled: false
