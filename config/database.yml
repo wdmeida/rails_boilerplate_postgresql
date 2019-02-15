@@ -1,8 +1,8 @@
 default: &default
   adapter: postgresql
   encoding: unicode
-  username: postgres
-  password:
+  username: <%= ENV['POSTGRESQL_DATABASE_USERNAME'] %>
+  password: <%= ENV['POSTGRESQL_DATABASE_PASSWORD'] %>
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
 
 development:
@@ -16,5 +16,5 @@ test:
 production:
   <<: *default
   database: my_app_production
-  username: rails_boilerplate_postgresql
-  password: <%= ENV['RAILS_BOILERPLATE_POSTGRESQL_DATABASE_PASSWORD'] %>
+  username: <%= ENV['POSTGRESQL_DATABASE_USERNAME'] %>
+  password: <%= ENV['POSTGRESQL_DATABASE_PASSWORD'] %>
