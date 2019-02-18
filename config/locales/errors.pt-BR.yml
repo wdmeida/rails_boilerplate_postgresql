@@ -1,0 +1,6 @@
+pt-BR:
+  errors:
+    request:
+      invalid_token: Token inválido.
+      missing_token: Token ausente.
+
